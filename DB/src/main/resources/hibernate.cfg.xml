@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-configuration >
+    <session-factory>
+        <property
+                name="connection.url"> jdbc:mysql://localhost:3306/Recipe
+        </property>
+
+        <property name= "connection.driver_class"> com.mysql.jdbc.Driver </property>
+        <property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
+        <property name="connection.serverTimezone">UTC</property>
+        <property name="connection.pool_size">10</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">4T6dakb48</property>
+        <property name="hibernate.hbm2ddl.auto"> update </property>
+        <property name="show_sql">false</property>
+        <property name="format_sql"> false </property>
+        <property name="use_sql_comments"> false </property>
+        <mapping class="Entities.Countries"></mapping>
+        <mapping class="Entities.Dish"></mapping>
+        <mapping class="Entities.GroupOfDishes"></mapping>
+        <mapping class="Entities.Process"></mapping>
+        <mapping class="Entities.Products"></mapping>
+        <mapping class="Entities.Rate"></mapping>
+        <mapping class="Entities.HighRates"></mapping>
+        <mapping class="Entities.Users"></mapping>
+    </session-factory>
+</hibernate-configuration>
